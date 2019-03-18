@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Clean Kijiji",
+  "version": "1.0",
+
+  "description": "Removes ads and featured posts from Kijiji making it easier to search for things you are looking for",
+
+  "icons": {
+    "48": "icons/clean-kijiji.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.kijiji.ca/*"],
+      "js": ["clean-kijiji.js"]
+    }
+  ]
+
+}
